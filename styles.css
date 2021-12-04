@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
+
+:root {
+	--color-primary: #ec4899;
+}
+
+/* !All imported component here */
+.navigation {
+	background-color: var(--color-primary);
+	color: white;
+	border-bottom-left-radius: 2rem;
+	border-bottom-right-radius: 2rem;
+	padding: 0.5rem 1rem;
+}
+.nav-brand {
+	font-weight: bold;
+	font-size: 2rem;
+}
+.nav-pills {
+	text-align: right;
+}
+.navigation .link {
+	color: white;
+}
+
+.link-active {
+	font-weight: bold;
+}
+
+.list-non-bullet {
+	list-style-type: none;
+	margin-block-start: 0;
+	padding-inline-start: 0;
+}
+.list-on-one-line {
+	white-space: nowrap;
+	/* overflow-x: hidden; */
+}
+.list-item-inline {
+	display: inline-block;
+	margin-right: 1rem;
+}
+
+.footer {
+	display: block;
+	background-color: var(--color-primary);
+	color: white;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	margin: 0 auto;
+	padding: 1rem;
+	height: 5rem;
+	border-top-left-radius: 2rem;
+	border-top-right-radius: 2rem;
+	text-align: center;
+	border-top: solid 0.1rem white;
+}
+.footer .link {
+	color: white;
+	margin-top: 1rem;
+}
+.footer ul {
+	padding-inline-start: 0;
+}
+.footer li {
+	margin-top: 1rem;
+}
+.footer-heading {
+	color: white;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+/* !All imported component End here */
+body {
+	padding-bottom: 8rem;
+	margin: 0;
+	background-color: #f2f2f2;
+	font-family: "Montserrat", sans-serif;
+}
+.main-color {
+	color: var(--color-primary);
+}
+.container {
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: center;
+}
+.container p {
+	font-size: 1rem;
+	font-weight: 500;
+}
+label {
+	display: block;
+	margin: 1rem;
+	font-size: 1rem;
+	font-weight: 600;
+}
+.change-table {
+	width: 80%;
+	text-align: center;
+	border-collapse: collapse;
+	margin: auto;
+}
+th,
+td {
+	border: 2px solid var(--color-primary);
+	width: 0%;
+	border-collapse: collapse;
+	padding: 0.4rem;
+}
+.caption {
+	margin: 1rem auto;
+	font-size: x-large;
+	font-weight: 500;
+}
+input {
+	font-size: 14px;
+	outline: #fff;
+	padding: 0.6rem 1rem;
+	margin: 2px 1rem;
+	border: 2px solid var(--color-primary);
+	border-radius: 0.5rem;
+	width: 100%;
+	max-width: 200px;
+}
+
+.btn {
+	display: block;
+	padding: 0.5rem 1rem;
+	margin: 2rem auto;
+	color: white;
+	border: 1px solid var(--color-primary);
+	background-color: var(--color-primary);
+	border-radius: 0.6rem;
+	font-size: 1rem;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+#error-message {
+	display: none;
+	color: red;
+	font-size: 1.2rem;
+	font-weight: 500;
+}

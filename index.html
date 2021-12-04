@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cash Register Manager</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<nav class="navigation">
+			<div class="nav-brand">Cash Register Manager</div>
+			<ul class="list-non-bullet nav-pills list-on-one-line">
+				<li class="list-item-inline"><a class="link link-active" href="https://zoef-shaikh.netlify.app/">Home</a></li>
+				<li class="list-item-inline"><a class="link" href="https://zoef-shaikh.netlify.app/projects.html">Projects</a></li>
+				<li class="list-item-inline"><a class="link" href="https://zoef-shaikh.netlify.app/blog.html">Blog</a></li>
+			</ul>
+		</nav>
+		<div class="container">
+			<h1 class="heading main-color">Cash Register Manager</h1>
+			<p>Enter the bill amount and cash given by the customer and know minimum number of notes to return.</p>
+			<label for="billAmount">Bill Amount</label>
+			<input type="number" id="billAmount" name="billAmount" placeholder="Enter Bill Amount" />
+			<label for="cashGiven">Cash Given</label>
+			<input type="number" id="cashGiven" name="cashGiven" placeholder="Enter Cash Given" />
+			<p id="error-message"></p>
+			<button id="check-btn" class="btn">Check</button>
+			<p id="change"></p>
+			<table class="change-table" style="border: 2px solid black">
+				<caption class="caption">
+					Return Change
+				</caption>
+				<tr>
+					<th>No of Notes</th>
+					<td class="notes-to-display"></td>
+					<td class="notes-to-display"></td>
+					<td class="notes-to-display"></td>
+					<td class="notes-to-display"></td>
+					<td class="notes-to-display"></td>
+					<td class="notes-to-display"></td>
+				</tr>
+				<tr>
+					<th>Notes</th>
+					<td>2000</td>
+					<td>500</td>
+					<td>100</td>
+					<td>10</td>
+					<td>5</td>
+					<td>1</td>
+				</tr>
+			</table>
+		</div>
+		<footer class="footer">
+			<div class="footer-heading">social media presence</div>
+			<ul class="social-links list-non-bullet list-on-one-line">
+				<li class="list-item-inline"><a class="link" href="https://github.com/zoef-yt">Github</a></li>
+				<li class="list-item-inline"><a class="link" href="https://twitter.com/zoef_yt">Twitter</a></li>
+				<li class="list-item-inline"><a class="link" href="https://www.linkedin.com/in/zoef-shaikh-279340201/">Linkedin</a></li>
+			</ul>
+		</footer>
+		<script src="app.js"></script>
+	</body>
+</html>
