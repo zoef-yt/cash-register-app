@@ -20,7 +20,7 @@ function validating() {
 		console.log(billAmount.value);
 		console.log(cashGiven.value);
 		hideMessage();
-		if (billAmount.value > cashGiven.value) {
+		if (Number(billAmount.value) < Number(cashGiven.value)) {
 			calculateTheReturn(cashGiven.value - billAmount.value);
 			showChange();
 		} else {
