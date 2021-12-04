@@ -17,12 +17,14 @@ function validating() {
 	if (billAmount.value == "" || cashGiven.value == "") {
 		showErrorMessage("Fields cannot be empty*");
 	} else {
+		console.log(billAmount.value);
+		console.log(cashGiven.value);
 		hideMessage();
 		if (billAmount.value > cashGiven.value) {
-			showErrorMessage("Cash given is less than bill amount*");
-		} else {
 			calculateTheReturn(cashGiven.value - billAmount.value);
 			showChange();
+		} else {
+			showErrorMessage("Cash given is less than bill amount*");
 		}
 	}
 }
