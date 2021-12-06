@@ -104,6 +104,9 @@ label {
 	border-collapse: collapse;
 	margin: auto;
 }
+.link {
+	text-decoration: none;
+}
 th,
 td {
 	border: 2px solid var(--color-primary);
