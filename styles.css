@@ -2,6 +2,7 @@
 
 :root {
 	--color-primary: #ec4899;
+	--off-white: #fce8f2;
 }
 
 /* !All imported component here */
@@ -85,8 +86,11 @@ body {
 .container {
 	width: 100%;
 	max-width: 800px;
-	margin: 0 auto;
 	text-align: center;
+	margin: 5rem auto;
+	padding: 2rem 6vw;
+	border-radius: 0.5rem;
+	background-color: var(--off-white);
 }
 .container p {
 	font-size: 1rem;
