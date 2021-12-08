@@ -14,17 +14,23 @@ function validating() {
 	console.log("validating");
 	hideMessage();
 
-	if (billAmount.value == "" || cashGiven.value == "") {
-		showErrorMessage("Fields cannot be empty*");
+	if (billAmount.value == "" || cashGiven.value == "" || billAmount.value < 0 || cashGiven.value < 0) {
+		showErrorMessage("Fields cannot be empty or less than 0*");
 	} else {
 		console.log(billAmount.value);
 		console.log(cashGiven.value);
 		hideMessage();
-		if (Number(billAmount.value) < Number(cashGiven.value)) {
+		if (Number(billAmount.value) === Number(cashGiven.value)) {
 			calculateTheReturn(cashGiven.value - billAmount.value);
+
 			showChange();
 		} else {
-			showErrorMessage("Cash given is less than bill amount*");
+			if (Number(billAmount.value) < Number(cashGiven.value)) {
+				calculateTheReturn(cashGiven.value - billAmount.value);
+				showChange();
+			} else {
+				showErrorMessage("Cash given is less than bill amount*");
+			}
 		}
 	}
 }
